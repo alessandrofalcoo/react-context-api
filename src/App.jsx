@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 function App() {
 
-  const data = [
+  const people = [
     { id: 1, name: 'Alice', age: 25, city: 'Rome' },
     { id: 2, name: 'Bob', age: 30, city: 'Milan' },
     { id: 3, name: 'Charlie', age: 35, city: 'Naples' },
