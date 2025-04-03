@@ -1,9 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const data = [
+    { id: 1, name: 'Alice', age: 25, city: 'Rome' },
+    { id: 2, name: 'Bob', age: 30, city: 'Milan' },
+    { id: 3, name: 'Charlie', age: 35, city: 'Naples' },
+    { id: 4, name: 'Diana', age: 28, city: 'Florence' }
+  ];
+
 
   return (
     <>
