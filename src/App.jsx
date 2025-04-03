@@ -1,5 +1,8 @@
-import { useState } from 'react'
-
+import { useState } from "react";
+import CountContext from "./contexts/CountContext";
+import PostsList from "./components/PostsList";
+import PostCard from "./components/PostCard";
+import PostsPage from "./components/PostsPage";
 function App() {
 
   const people = [
@@ -11,10 +14,12 @@ function App() {
 
 
   return (
-    <>
-
-    </>
-  )
+    <CountContext.Provider value={{ people }}>
+      <PostsPage />
+      <PostsList />
+      <PostCard />
+    </CountContext.Provider>
+  );
 }
 
 export default App
