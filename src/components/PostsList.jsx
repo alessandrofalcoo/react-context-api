@@ -8,13 +8,14 @@ export default function PostsList() {
 
     return (
         <>
-            {
+            <div className="container">
+                <div className="row g-4 d-flex justify-content-center">
+                    {people.map(person => (
+                        <PostCard key={person.id} person={person} />
 
-                people.map(person => (
-                    <PostCard key={person.id} person={person} />
-
-                ))
-            }
+                    ))}
+                </div>
+            </div>
         </>
     )
 }
