@@ -5,13 +5,15 @@ import PostCard from "./PostCard";
 export default function PostsList() {
     const { people } = useContext(CountContext)
     console.log(people);
-    console.log(PostCard);
-
 
     return (
         <>
             {
 
+                people.map(person => (
+                    <PostCard key={person.id} person={person} />
+
+                ))
             }
         </>
     )

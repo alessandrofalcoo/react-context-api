@@ -17,7 +17,6 @@ function App() {
     <CountContext.Provider value={{ people }}>
       <PostsPage />
       <PostsList />
-      <PostCard />
     </CountContext.Provider>
   );
 }
